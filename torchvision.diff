@@ -1,0 +1,23 @@
+diff --git a/setup.py b/setup.py
+index fd653fe..fadaa31 100644
+--- a/setup.py
++++ b/setup.py
+@@ -37,11 +37,6 @@ with open(version_txt, 'r') as f:
+ sha = 'Unknown'
+ package_name = 'torchvision'
+ 
+-try:
+-    sha = subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=cwd).decode('ascii').strip()
+-except Exception:
+-    pass
+-
+ if os.getenv('BUILD_VERSION'):
+     version = os.getenv('BUILD_VERSION')
+ elif sha != 'Unknown':
+diff --git a/version.txt b/version.txt
+index 657e7c0..ac39a10 100644
+--- a/version.txt
++++ b/version.txt
+@@ -1 +1 @@
+-0.9.0a0
++0.9.1

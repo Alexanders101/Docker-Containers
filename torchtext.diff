@@ -1,0 +1,21 @@
+diff --git a/setup.py b/setup.py
+index 7c71a0d..452df6d 100644
+--- a/setup.py
++++ b/setup.py
+@@ -18,15 +18,9 @@ def read(*names, **kwargs):
+ 
+ 
+ def _get_version():
+-    version = '0.9.0a0'
++    version = '0.9.1'
+     sha = None
+ 
+-    try:
+-        cmd = ['git', 'rev-parse', 'HEAD']
+-        sha = subprocess.check_output(cmd, cwd=str(ROOT_DIR)).decode('ascii').strip()
+-    except Exception:
+-        pass
+-
+     if os.getenv('BUILD_VERSION'):
+         version = os.getenv('BUILD_VERSION')
+     elif sha is not None:

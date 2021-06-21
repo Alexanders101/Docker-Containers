@@ -1,0 +1,7 @@
+diff --git a/version.txt b/version.txt
+index 52d893b..27f9cd3 100644
+--- a/version.txt
++++ b/version.txt
+@@ -1 +1 @@
+-1.8.0a0
++1.8.1

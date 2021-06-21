@@ -1,0 +1,7 @@
+channel_priority: strict
+changeps1: false
+channels:
+  - pypi
+  - conda-forge
+  - pytorch
+  - defaults
